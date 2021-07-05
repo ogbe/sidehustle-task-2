@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Raleway";
+  font-size: 11px;
+  text-align: center;
+  background-color: #1e2231;
+  color: #f0f8ff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+  width: 90%;
+}
+
+a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+a:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 60px;
+}
+
+h1::first-letter {
+  text-transform: uppercase;
+}
+
+p::first-letter {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+.nav-links {
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+.intro__img > img {
+  width: 85%;
+}
+
+.intro__img--caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.intro__img--caption-heading {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.intro__img--caption-text {
+  font-size: 19px;
+  padding: 25px 65px;
+  line-height: 30px;
+}
+
+.sign-up-link,
+.sign-up-form > button {
+  width: 30%;
+  padding: 20px;
+  background: linear-gradient(to right, #4cdad2, #5dabd8);
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.sign-up-link:hover,
+.sign-up-form > button:hover {
+  background: #7fd9f0;
+  text-decoration: 0;
+  cursor: pointer;
+}
+
+.services > ul {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center
+}
+
+.service__item {
+  width: 40%;
+  margin: 10px;
+}
+
+.service__item-img {
+  width: 15%;
+  padding: 20px;
+}
+
+.service__item--heading {
+  font-size: 20px;
+}
+
+.service__item--text {
+  padding: 20px 45px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.productivity {
+  display: flex;
+  margin: 100px auto;
+  width: 90%;
+}
+
+.productivity-img > img {
+  width: 90%;
+}
+
+.productivity-text {
+  margin-left: 50px;
+  text-align: left;
+  width: 50%;
+}
+
+.productivity-text__heading {
+  font-size: 35px;
+  font-weight: 600;
+  width: 80%;
+  line-height: 50px;
+  padding: 90px 0 20px;
+}
+
+.productivity-text__text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.productivity-text__text--top {
+  margin-bottom: 20px;
+}
+
+.productivity-text__link {
+  display: flex;
+  align-items: center;
+  text-transform: inherit;
+  margin-top: 20px;
+  padding: 0 0 5px 0;
+  font-weight: 200;
+  color: #65cec9;
+  border-bottom: 1px solid #65cec9;
+  width: 32%;
+}
+
+.productivity-text__link:hover {
+  color: #f0f8ff;
+  border-bottom: 1px solid #f0f8ff;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.link-arrow {
+  margin-left: 10px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 60px auto;
+  width: 90%;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-items {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px 20px;
+  background-color: #212c41;
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 25%;
+  text-align: left;
+  word-spacing: 5px;
+}
+
+.testimonial-items__text {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.profile {
+  display: flex;
+  margin-top: 30px;
+}
+
+.profile-img {
+  width: 20%;
+}
+
+.profile-img > img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+.profile-name {
+  font-size: 15px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.profile-role {
+  font-size: 10px;
+}
+
+.CEO {
+  text-transform: uppercase;
+}
+
+.sign-up {
+  width: 50%;
+  margin: 200px auto 0;
+  padding: 70px 100px 30px;
+  box-shadow: 5px 3px 8px 3px #0f1724;
+  border-radius: 10px;
+  background-color: #1c232e;
+  position: relative;
+}
+
+.sign-up__heading {
+  font-size: 25px;
+}
+
+.sign-up__text {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 20px 40px 40px;
+}
+
+.sign-up-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-up-form > input {
+  width: 60%;
+  background-color: #f0f8ff;
+  font-size: 13px;
+  padding: 15px;
+  border: 0;
+  border-radius: 50px;
+  outline: 0;
+}
+
+.sign-up-form > button {
+  color: #f0f8ff;
+  text-transform: capitalize;
+  border: 0;
+  font-size: 13px;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #121830;
+  margin: -130px auto 0;
+  padding: 200px 60px 0 80px;
+  text-align: left;
+}
+
+footer .logo-img {
+  width: 10%;
+  padding-bottom: 30px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts__location {
+  display: flex;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 20px;
+  width: 30%;
+  padding-right: 40px;
+  word-spacing: 4px;
+}
+
+.contacts__location > img {
+  margin-right: 20px;
+}
+
+.contacts__online li {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 13px;
+  padding-right: 120px;
+}
+
+.contacts__online img {
+  padding-right: 20px;
+}
+
+.footer-link {
+  display: block;
+  margin: 0 50px 20px 0;
+}
+
+.social-media {
+  display: flex;
+  width: 15%;
+}
+
+.social-media img {
+  width: 40%;
+  background-color: #121830;
+  border: 2px solid #f0f8ff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+@media only screen and  (max-width: 1038px) {
+  .sign-up-form > button {
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .productivity-text__heading {
+    padding-top: 10px
+  }
+
+  .sign-up-form > button {
+    padding: 10px;
+  }
+
+  .contacts__location {
+    width: 50%;
+  }
+
+  .contacts__online li {
+    padding-right: 20px
+  }
+
+  .footer-link, .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    background: url("../images/bg-curvy-mobile.svg") center no-repeat;
+    background-color: inherit;
+    background-size: cover;
+    background-color: #1e2231;
+  }
+
+  .logo-img {
+    width: 50%
+  }
+
+  .nav-link {
+    padding-left: 5px;
+  }
+
+  .intro {
+    width: 90%
+  }
+
+  .intro__img--caption-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .intro__img--caption-text {
+    font-size: 15px;
+    padding: 25px 10px;
+  }
+  
+  .sign-up-link,
+  .sign-up-form > button {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .service__item {
+    width: 100%;
+  }
+  
+  .service__item-img {
+    width: 13%;
+  }
+  
+  .service__item--heading {
+    font-size: 18px;
+  }
+  
+  .service__item--text {
+    font-size: 13px;
+    line-height: 25px;
+    word-spacing: 4px;
+  }
+
+  .productivity {
+    flex-direction: column;
+  }
+  
+  
+  .productivity-text {
+    margin-left: 10px;
+    width: 100%;
+  }
+  
+  .productivity-text__heading {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 50px 0 20px;
+  }
+  
+  .productivity-text__text {
+    font-size: 13px;
+  }
+  
+  .productivity-text__link {
+    font-size: 13px;
+    width: 45%;
+  }
+  .productivity-text__link:hover {
+    font-size: 13px;
+    width: 45%;
+  }
+  
+  .testimonials {
+    margin: 100px auto;
+    padding-left: 10px;
+  }
+  
+  .testimonial-quote > img {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .testimonials-list {
+    flex-direction: column;
+  }
+  
+  .testimonial-items {
+    padding: 30px 20px 15px;
+    width: 70%;
+    word-spacing: 0;
+    margin: auto;
+  }
+  
+  .testimonial-items__text {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .profile {
+    margin-top: 20px;
+  }
+  
+  .profile-img > img {
+    width: 60%;
+  }
+  
+  .profile-name {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  .profile-role {
+    font-size: 8px;
+  }
+
+  .sign-up {
+    width: 80%;
+    margin: 130px auto 0;
+    padding: 40px 5px 20px;
+  }
+  
+  .sign-up__heading {
+    font-size: 17px;
+  }
+  
+  .sign-up__text {
+    padding: 20px;
+  }
+  
+  .sign-up-form {
+    flex-direction: column;
+  }
+  
+  .sign-up-form > input {
+    width: 80%;
+  }
+  
+  .sign-up-form > button {
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  footer {
+    padding: 200px 60px 40px 30px;
+  }
+  
+  footer .logo-img {
+    width: 70%;
+    padding-left: 10px;
+  }
+  
+  .contacts {
+    flex-direction: column;
+  }
+  
+  .contacts__location {
+    font-size: 15px;
+    line-height: 25px;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts__online li {
+    margin: 0 0 30px;
+  }
+  
+  .contacts__online img {
+    padding-right: 10px;
+    width: 8%;
+  }
+  
+  .footer-links + ul {
+    margin-top: 20px;
+  }
+  
+  .social-media {
+    flex-direction: row;
+    width: 40%;
+    margin: auto;
+  }
+
+  .social-media > img {
+    width: 20%
+  }
+}
+
