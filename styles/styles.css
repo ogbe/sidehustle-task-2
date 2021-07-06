@@ -113,7 +113,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .service__item {
@@ -357,7 +357,7 @@ footer .logo-img {
   padding: 5px;
 }
 
-@media only screen and  (max-width: 1038px) {
+@media only screen and (max-width: 1038px) {
   .sign-up-form > button {
     padding: 12px;
   }
@@ -365,7 +365,7 @@ footer .logo-img {
 
 @media only screen and (max-width: 768px) {
   .productivity-text__heading {
-    padding-top: 10px
+    padding-top: 10px;
   }
 
   .sign-up-form > button {
@@ -377,10 +377,11 @@ footer .logo-img {
   }
 
   .contacts__online li {
-    padding-right: 20px
+    padding-right: 20px;
   }
 
-  .footer-link, .social-media {
+  .footer-link,
+  .social-media {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -391,7 +392,6 @@ footer .logo-img {
 @media only screen and (max-width: 650px) {
   body {
     background: url("../images/bg-curvy-mobile.svg") center no-repeat;
-    background-color: inherit;
     background-size: cover;
     background-color: #1e2231;
   }
@@ -399,19 +399,19 @@ footer .logo-img {
   .logo-img {
     display: flex;
     align-items: center;
-    width: 50%
+    width: 50%;
   }
 
   .nav-links {
-    width: 50%
+    width: 100%;
   }
-
+  
   .nav-link {
     padding-left: 5px;
   }
 
   .intro {
-    width: 90%
+    width: 90%;
   }
 
   .intro__img--caption-heading {
@@ -423,25 +423,25 @@ footer .logo-img {
     font-size: 15px;
     padding: 25px 10px;
   }
-  
+
   .sign-up-link,
   .sign-up-form > button {
     width: 70%;
     padding: 20px;
   }
-  
+
   .service__item {
     width: 100%;
   }
-  
+
   .service__item-img {
     width: 13%;
   }
-  
+
   .service__item--heading {
     font-size: 18px;
   }
-  
+
   .service__item--text {
     font-size: 13px;
     line-height: 25px;
@@ -451,37 +451,32 @@ footer .logo-img {
   .productivity {
     flex-direction: column;
   }
-  
-  
+
   .productivity-text {
     width: 100%;
+    margin-left: 0
   }
-  
+
   .productivity-text__heading {
     font-size: 13px;
     line-height: 20px;
     padding: 50px 0 20px;
   }
-  
+
   .productivity-text__text {
     font-size: 13px;
   }
-  
+
   .productivity-text__link {
     font-size: 13px;
-    width: 45%;
+    width: 55%;
   }
 
   .productivity-text__link:hover {
     font-size: 13px;
     width: 45%;
   }
-  
-  .testimonials {
-    margin: 100px auto;
-    padding-left: 10px;
-  }
-  
+
   .testimonial-quote > img {
     width: 50%;
     margin-left: 20px;
@@ -489,13 +484,13 @@ footer .logo-img {
   .testimonials-list {
     flex-direction: column;
   }
-  
+
   .testimonial-items {
     padding: 30px 20px 15px;
     width: 70%;
     word-spacing: 0;
   }
-  
+
   .testimonial-items__text {
     font-size: 10px;
     line-height: 15px;
@@ -504,16 +499,16 @@ footer .logo-img {
   .profile {
     margin-top: 20px;
   }
-  
+
   .profile-img > img {
     width: 60%;
   }
-  
+
   .profile-name {
     font-size: 12px;
     letter-spacing: 1px;
   }
-  
+
   .profile-role {
     font-size: 8px;
   }
@@ -523,23 +518,23 @@ footer .logo-img {
     margin: 130px auto 0;
     padding: 40px 5px 20px;
   }
-  
+
   .sign-up__heading {
     font-size: 17px;
   }
-  
+
   .sign-up__text {
     padding: 20px;
   }
-  
+
   .sign-up-form {
     flex-direction: column;
   }
-  
+
   .sign-up-form > input {
     width: 80%;
   }
-  
+
   .sign-up-form > button {
     width: 90%;
     margin-top: 20px;
@@ -549,16 +544,16 @@ footer .logo-img {
   footer {
     padding: 200px 60px 40px 30px;
   }
-  
+
   footer .logo-img {
     width: 40%;
     padding-left: 10px;
   }
-  
+
   .contacts {
     flex-direction: column;
   }
-  
+
   .contacts__location {
     font-size: 15px;
     line-height: 25px;
@@ -570,24 +565,23 @@ footer .logo-img {
   .contacts__online li {
     margin: 0 0 30px;
   }
-  
+
   .contacts__online img {
     padding-right: 10px;
     width: 8%;
   }
-  
+
   .footer-links + ul {
     margin-top: 20px;
   }
-  
+
   .social-media {
     flex-direction: row;
-    width: 40%;
+    width: 30%;
     margin: auto;
   }
 
-  .social-media > img {
-    width: 20%
+  .social-media__link {
+    margin-right: 20px
   }
 }
-
